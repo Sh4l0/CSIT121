@@ -1,0 +1,202 @@
+body {
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* structure styles */
+nav, header, main, footer {
+    width: 85%;
+    margin: auto;
+}
+
+article {
+    border: 0.1em solid darkred;
+    padding: 1em;
+    margin: 1em;
+}
+
+header, footer{
+    background-color: darkred;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 1.6%;
+}
+
+main {
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    background-color: rgb(245, 226, 192);
+}
+/* element design */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2em;
+    color: white;
+}
+
+nav li{
+    display: block;
+    border: 0.01em solid white;
+    width: 100%;
+    background-color: rgb(189, 46, 46); 
+    gap: 0.2em;
+    font-size: 1.3em;
+    padding: 0.2em;
+}
+
+nav a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+header h1{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    justify-content: center;
+    padding: 0.4em;
+}
+footer p{
+    font-size: 1.2em;
+    padding: 0.2em;
+    font-style: italic;
+
+}
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p, a, li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article a {
+    color: darkred;
+}
+
+#big{
+    font-weight: bold;
+}
+
+article h2{
+    color: red;
+    font-size: 1.7em;
+}
+
+article h3 {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: lighter;
+    border-bottom: 0.2em dotted darkred;
+    margin-bottom: 2%;
+}
+
+article h4{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    /* structure styles */
+
+    article {
+        border: 0.1em solid darkblue;
+    }
+
+    header, footer{
+        background-color: darkblue;
+        color: white;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        background-color: wheat;
+        display: flex;
+        flex-direction: row;
+    }
+
+    article {
+        background-color: rgb(245, 226, 192);
+    }
+    /* element design */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0.2em;
+        color: white;
+    }
+
+    nav li{
+        display: block;
+        border: 0.01em solid white;
+        width: 100%;
+        background-color: rgb(46, 48, 189); 
+        gap: 0.2em;
+        font-size: 1.3em;
+        padding: 0.2em;
+    }
+
+    nav a {
+        color: white;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    header h1{
+        color: rgb(255, 255, 255);
+        font-size: 3em;
+        padding: 0.4em;
+    }
+    footer p{
+        font-size: 1.1em;
+        font-style: italic;
+    }
+    h1, h2, h3, h4 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    p, a, li{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    article a {
+        color: darkblue;
+    }
+
+    #big{
+        font-weight: bold;
+    }
+
+    article h2{
+        color: blue;
+        font-size: 1.7em;
+    }
+
+    article h3 {
+        font-size: 1em;
+        font-style: italic;
+        font-weight: lighter;
+        border-bottom: 0.2em dotted darkblue;
+        margin-bottom: 2%;
+    }
+
+
+
+}
