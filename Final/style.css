@@ -1,0 +1,282 @@
+/* LAB 7 STYLES*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+thead img{
+    width: 90%;
+    height: 90%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    padding: 0.5em;
+    border: 0.2em solid rgb(83, 25, 138) ;
+    font-size: 1.3em;
+    background-color: blueviolet;
+    color: white;
+}
+header {
+    padding: 0.5em;
+    text-align: center;
+    }
+header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    padding-bottom: 0.2em;
+    font-weight: bolder;
+    color: blueviolet;
+    border-bottom: 0.2em dashed rgb(83, 25, 138) ;
+    }
+footer h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    padding-bottom: 0.2em;
+    font-weight: bolder;
+    color: blueviolet;
+    border-bottom: 0.2em dashed rgb(83, 25, 138) ;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+td{
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
+body{
+    Font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;     
+    }
+thead tr, tfoot tr{
+    font-size: 1.3em;
+    text-align: left;
+    background-color: blueviolet;
+    color: white;
+    border-bottom: 0.2em solid rgb(83, 25, 138);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+th, td {
+    border: 0.1em solid rgb(83, 25, 138) ;
+    padding: 0.5em
+    }
+tbody tr:nth-last-of-type(odd) {
+    background-color: rgba(133, 40, 219, 0.281);
+    }
+main{
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 95%;
+    margin: 0.1em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    background-color: rgba(133, 40, 219, 0.281);
+    border: 0.1em solid rgb(83, 25, 138);
+    }
+div{
+    height:40%
+}
+input, textarea, p, select{
+    width: 95%;
+    height: 50%;
+    font-size: 1.05em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+label{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+#buttons{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    }
+button{
+    width: 25%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0.1em solid rgb(83, 25, 138);
+    background-color: blueviolet;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    }
+#invis, #comment-hint{
+    font-size: 0em;
+}
+@media (max-width: 768px) {
+    table{
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    td{
+        overflow: hidden;
+        overflow-wrap: break-word;
+        font-size: smaller;
+    }
+    td.special{
+        overflow: hidden;
+        overflow-wrap: anywhere;
+        font-size: smaller;
+    }
+    tfoot{
+        font-size: smaller;
+    }
+
+    button{
+    width: 45%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0.1em solid rgb(83, 25, 138);
+    background-color: blueviolet;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    }
+
+    
+}
+
+/* LAB 8 STYLES*/
+div.mediaLab{
+    display: flex;
+    flex-direction: column;
+}
+div.mediaLab a{
+    align-self: center;
+}
+div.mediaLab img{
+    height: 90%;
+    width: 80%;
+    align-self: center;
+    border: 0.2em solid blueviolet;
+}
+footer.Lab08{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 0.2em solid rgb(83, 25, 138);
+}
+footer.Lab08 a{
+    padding: 2rem;
+    margin: 0rem 2rem;
+}
+main.mainLab8{
+    flex-direction: column;
+    align-items:center;
+    border: 0.2em solid blueviolet;
+}
+main.mainLab8 h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bolder;
+    color: blueviolet;
+}
+div#imgHub {
+    width: auto;
+    align-items: center;
+    padding-bottom: 0.4em;
+}
+div#imgHub a{
+    padding: 2em;
+    margin: 0em 2em;
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    header.headerLab8, main.mainLab8, footer.Lab08{
+        width: 85%;
+        height: auto;
+        margin: auto;
+    }
+    footer.Lab08 a{
+      width: 66%;  
+      padding: auto;
+    }
+    div.mediaLab img{
+    height: 90%;
+    width: 80%;
+    align-self: center;
+    border: 0.2em solid blueviolet;
+}
+}
+/* NAV STYLE*/
+
+.nav-links li{
+    list-style-type: none;
+}
+
+.boldFinal{
+    font-weight: bold ;
+}
+.dropdown {
+    font-weight: lighter;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(187, 187, 187);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+.sidenav a {
+    padding: auto;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000000;
+    display: block;
+    background-color: #00000000;
+    border:0em solid;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+  color: blueviolet;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 80%;
+  font-size: auto;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#docMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reflection{
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .sidenav {padding-top: 2rem;}
+  .sidenav a {font-size: 2rem;}
+}
